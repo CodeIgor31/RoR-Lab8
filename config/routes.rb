@@ -2,5 +2,5 @@
 
 Rails.application.routes.draw do
   root 'form#form_creator', as: 'home'
-  get 'result' => 'result_page#result'
+  get 'result' => 'result_page#result', as:'res'
 end

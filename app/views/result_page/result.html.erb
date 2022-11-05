@@ -13,13 +13,14 @@
 
 <body>
 <h3>Таблица с результатами</h3>
+Введенное диапазон: [0, <%= @number %>]
 <table class = "tab">
     <tr>
     <th>Число</th>
     <th>Квадрат числа</th>
     </tr>
     <% i = 0 %>
-    <% while (i < @result_arr.size()) do %>
+    <% while (i < @result_arr.size) do %>
     <tr>
         <td><%= @result_arr[i]%></td>
         <td><%= @result_arr[i]**2 %></td>
@@ -29,4 +30,5 @@
 </table>
 Количество таких чисел
 <p id="counter"><%= @counter %></p>
+<%= link_to "Repeat calculation", home_path %>
 </body>
